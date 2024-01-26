@@ -1,4 +1,5 @@
 .Banner {
+ margin-top:50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,22 +25,32 @@
 
 .specials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2rem 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   justify-content: center;
+  align-items: center;
 }
 
-.specials > h2 {
+#specials-title{
   text-align: center;
-}
-.specials > article {
-  flex: 1;
 }
 
 .specials-img {
-  width: 85%;
+  width: 250px;
+}
+.specials-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+@media (max-width: 800px){
+  .specials {
+    flex-direction: column;
+  }
 }
 
 

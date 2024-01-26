@@ -1,4 +1,5 @@
 #menu-list {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr;
   background-color: #495e57;

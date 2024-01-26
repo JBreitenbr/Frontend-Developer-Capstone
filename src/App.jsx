@@ -3,6 +3,7 @@ import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MenuList from './components/MenuList';
+import Footer from './components/Footer';
 export default function App() {
   return (
     <>
@@ -12,7 +13,8 @@ export default function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/menu" element={<MenuList/>}/>
         </Routes>
-        </Router>
+      <Footer/>
+    </Router>
     </>
   )
 }

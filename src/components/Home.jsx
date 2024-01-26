@@ -19,13 +19,18 @@ const Home = () => {
           <button aria-label='On Click'>Reserve a table</button>
         </Link>
 <img src={restaurant_view} alt="Banner Img" className='banner-img' /></article>
-    <article className="specials">
-      <h2>This Week's Specials!</h2>
-
-<img src={Bruschetta} alt="Bruschetta" className='specials-img'/>
-<img src={greekSalad} alt="Greek Salad" className='specials-img'/>
+    <article>
+      <h2 id="specials-title">This Week's Specials!</h2>
+<div className="specials">
+<div className="specials-div"><img src={Bruschetta} alt="Bruschetta" className='specials-img'/><p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p></div>
+<div className="specials-div"><img src={greekSalad} alt="Greek Salad" className='specials-img'/><p>The famous greek salad of crispy lettuce, peppers, olives and feta, garnished with garlic and rosemary.</p>
+</div>
+  <div className="specials-div">
       <img src={lemonDessert} alt="Lemon Dessert" className='specials-img'/>
-
+    <p>This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.
+    </p>
+  </div>
+</div>
     </article>
     </section>
   )

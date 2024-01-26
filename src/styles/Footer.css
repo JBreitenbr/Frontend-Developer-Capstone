@@ -1,0 +1,4 @@
+footer {
+  display: grid;
+  gird-template-columns: 1fr 1fr 1fr;
+}
