@@ -12,9 +12,8 @@ const Navbar=() => {
     <img id="logo-img" src={Logo}/><button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button><div className="collapse navbar-collapse" id="navbarNav">
-      {/* <Link to="/">Home</Link>
-        <Link to="/about">About </Link>*/}
-        <Link to="/menu">Menu</Link>
+      <Link className="nav-link nav-item" to="/">Home</Link>
+      <Link className="nav-link nav-item" to="/menu">Menu</Link>
     {/* <Link to="/book" style={{marginLeft:"5px"}}>Book</Link>*/}
       
       </div></div>

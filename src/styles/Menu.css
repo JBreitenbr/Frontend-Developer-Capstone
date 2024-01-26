@@ -41,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color:#495e57;
 }
 .menu-item-photo div {
   position: absolute;
@@ -49,6 +50,7 @@
   width: 80px;
   background-color: #f4ce14;
   color: #495e57;
+  border: 1px solid #495e57;
   text-align: center;
 }
 .menu-item-details {
@@ -63,14 +65,14 @@ hr.divider {
 }
 
 @media (min-width: 768px) {
-  #menu {
+  #menu-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: 1050px) {
-  #menu {
+  #menu-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -81,4 +83,12 @@ hr.divider {
   border: 3px solid #000045;
   }
 
+}
+
+
+@media (min-width: 1250px) {
+  #menu-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }

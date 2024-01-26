@@ -14,13 +14,13 @@ const MenuList=() =>{
   });
 
   return (
-      <div id="menu-list" className="container container-gap">
-        <div className="menus-container">
+      <div className="outer">
+        <div id="menu-list">
             {/* <h2>This week Specials</h2>
             <Link to="/" className="menu-link">
               See whole online menu
             </Link>*/}
-          <div className="menus-cards">{menuElements}</div>
+          {menuElements}
         </div>
       </div>
   );

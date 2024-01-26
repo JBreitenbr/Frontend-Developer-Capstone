@@ -21,7 +21,7 @@ const menuData = [
     title: "Greek salad",
     price: 12.00,
     description:
-      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
+      "The famous greek salad of crispy lettuce, peppers, olives and feta, garnished with garlic and rosemary.",
   },
   {
     id: 3,

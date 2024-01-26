@@ -1,0 +1,46 @@
+.Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+  padding: 5rem 3rem;
+  color: #EDEFEE;
+}
+
+.Banner div {
+  max-width: 1000px;
+  position: relative;
+}
+
+.Banner h2 {
+  color: #F4CE14;
+}
+
+.banner-img{
+  width: 320px;
+  border-radius: 20px;
+}
+
+.specials {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.specials > h2 {
+  text-align: center;
+}
+.specials > article {
+  flex: 1;
+}
+
+.specials-img {
+  width: 85%;
+}
+
+
+

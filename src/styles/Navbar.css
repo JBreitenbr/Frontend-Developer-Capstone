@@ -1,19 +1,16 @@
-#header-nav {
-  background-color:#f3f3f3;
-  margin: 0;
-}
-
 #logo-img {
   height: 40px;
   margin: 10px 15px 10px 0px;
 }
-/*
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 22px;
-  height: 2px;
-}
 
-.navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
-}*/
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  background-color:#e3e3e3;
+  z-index: 2;
+}
