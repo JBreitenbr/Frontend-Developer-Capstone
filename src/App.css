@@ -1,9 +1,9 @@
 body {
     font-family: 'Karla', sans-serif;
-    margin-top: 3rem;
+    /*margin-top: 3rem;
     margin-bottom: 3rem;
     margin-left: 5%;
-    margin-right: 5%;
+    margin-right: 5%;*/
 }
 
 
@@ -74,7 +74,7 @@ a:hover {
 .Banner h2 {
   color: #F4CE14;
 }
-
+/*
 button {
   background-color: #F4CE14;
   color: black;
@@ -85,7 +85,7 @@ button {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-}
+}*/
 
 .banner-img{
   position: absolute;
