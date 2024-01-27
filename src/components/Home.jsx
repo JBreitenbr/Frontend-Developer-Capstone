@@ -11,18 +11,21 @@ import testi2 from '../assets/testi2.jpg';
 import testi3 from '../assets/testi3.jpg';
 
 const Home = () => {
+  let w=window.innerWidth;
+  console.log(w);
   return (<>
     <section>
-      <article className="Banner">
-        <h2>Little Lemon</h2>
-        <h3>San Francisco</h3>
-        
-        <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-        <Link to="/booking">
-          <button aria-label='On Click'>Reserve a table</button>
+      <article className="banner">
+        <h2 id="head1">Little Lemon</h2>
+        <h3 id="head2">San Francisco</h3>
+        <p className="resto-desc">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        <Link to="/Frontend-Developer-Capstone/reservations">
+          <button className="btn-lemon">Reserve a table</button>
         </Link>
-<img src={restaurant_view} alt="Banner Img" className='banner-img' /></article>
-    <article>
+<img src={restaurant_view} alt="Banner Image" className='banner-img' /><Link to="/Frontend-Developer-Capstone/menu">
+          <button id="check-menu" className="btn-lemon">Check out our menu!</button>
+        </Link></article>
+   {/* <article>
       <h2 id="specials-title">This Week's Specials!</h2>
 <div className="specials">
 <div className="specials-div"><img src={Bruschetta} alt="Bruschetta" className='specials-img'/><p>Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.</p></div>
@@ -48,7 +51,7 @@ const Home = () => {
         <div className="test-wrapper"> <img src={testi3} alt="Testimonial 3" className='test-pic'/><h4>&nbsp;Janet</h4></div>
   <p className="test-para"><i className="fa fa-quote-left"></i>&nbsp;&nbsp;Great experience! Not only is the food impeccable, but also the service is top-notch.&nbsp;&nbsp;<i className="fa fa-quote-right"></i></p>
       </div></div>
-      </article>
+      </article>*/}
     </section><Footer/></>
   )
 }

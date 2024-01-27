@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const ConfirmedReservation = () => {
   let obj=window.localStorage.getItem("myObject");
   let parsed=JSON.parse(obj);
+  console.log(parsed);
   let datum=parsed.datum;
   let uhrzeit=parsed.uhrzeit;
   return (

@@ -5,6 +5,7 @@
   padding: 1.5rem ;
   display: flex;
   gap: 2rem;
+  height: 200px;
 }
 
 .site-footer-logo {
@@ -13,9 +14,12 @@
 
 .site-footer h3 {
   text-transform: uppercase;
-  letter-spacing: 1px;
   margin-bottom: 0.5rem;
-  font-size: 16px;
+  font-size: 1.2rem;
+}
+.site-footer-contact {
+  width: 200px;
+  padding: 1rem;
 }
 
 .site-footer-contact svg {
@@ -24,10 +28,18 @@
 
 .site-footer-contact p {
   margin-bottom: 0.25rem;
+  font-size: 0.8rem;
+  width: 50vw;
+}
+
+#footer-logo-div {
+  padding: 1rem;
+  background-color:#f3f3f3;
 }
 
 #cpy {
   text-align: center;
   background-color:#495e57;
   color: white;
+  padding-bottom: 1.5rem;
 }

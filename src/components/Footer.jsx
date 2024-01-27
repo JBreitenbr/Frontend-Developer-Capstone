@@ -14,10 +14,8 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="site-footer">
-
-      <div className="site-footer-contact">
+    <footer className="site-footer">
+<div className="site-footer-contact">
         <h3>Contact us</h3>
         <address>
           {contacts.map((contact, index) => (
@@ -25,22 +23,12 @@ const Footer = () => {
               <FontAwesomeIcon icon={contact.icon} /> {contact.info}
             </p>
           ))}
-        </address></div><div style={{backgroundColor:"grey",padding:"1rem"}}><img
+          <p style={{fontSize:"1.1rem"}}>&copy; Little Lemon 2024</p>
+        </address></div><div id="footer-logo-div"><img
         className="site-footer-logo"
         src={logo_footer2}
         alt="Little Lemon"
-      /></div>
-      </div>
-        {/*<div className="site-footer-contact"><h3>Opening Hours</h3>
-      <p>
-        The Little Lemon Restaurant is open 7 days a week, except for public holidays.
-      </p>
-      <ul>
-        <li>Mon - Fri: 2pm - 10pm</li>
-        <li>Sat: 2pm - 11pm</li>
-        <li>Sun: 2pm - 9pm</li>
-      </ul></div>*/}
-     <div id="cpy">Copyright Little Lemon</div>   
+      /></div> 
     </footer>
   );
 };

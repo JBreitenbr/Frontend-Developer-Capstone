@@ -1,28 +1,33 @@
-.Banner {
- margin-top:50px;
+.banner {
+ margin-top:20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #495e57;
-  padding: 5rem 3rem;
+  padding: 3rem 1.8rem 1rem 1.8rem;
   color: #EDEFEE;
 }
 
-.Banner div {
-  max-width: 1000px;
-  position: relative;
-}
-
-.Banner h2 {
+#head1 {
   color: #F4CE14;
+  padding-top:10px;
+  margin: 0;
 }
 
+#head2 {
+  margin: 0;
+}
+.resto-desc {
+    font-size: 1.05rem;
+  }
 .banner-img{
-  width: 320px;
+  width: 270px;
   border-radius: 20px;
 }
-
+#check-menu {
+  margin-top: 1rem;
+}
 .specials,.testis {
   display: flex;
   flex-direction: row;
