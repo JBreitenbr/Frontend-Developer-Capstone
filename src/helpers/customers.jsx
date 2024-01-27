@@ -6,7 +6,7 @@ const customerData = [
     id:1,
     custImg: testi1,
     isCalled: "Laura",
-    custRev:"The best restaurant I've been to! And that's saying a lot, since I've been to many!"
+    custRev:"Best restaurant I've been to! And that's saying a lot, since I've been to many!"
   },
   {
     id:2,
