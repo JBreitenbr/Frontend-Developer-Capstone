@@ -25,3 +25,9 @@
 .site-footer-contact p {
   margin-bottom: 0.25rem;
 }
+
+#cpy {
+  text-align: center;
+  background-color:#495e57;
+  color: white;
+}

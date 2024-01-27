@@ -13,7 +13,7 @@ const Navbar=() => {
     <span className="navbar-toggler-icon"></span>
   </button><div className="collapse navbar-collapse" id="navbarNav">
       <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone">Home</Link>
-      <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/menu">Menu</Link>
+      <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/menu">Menu</Link><Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/about">About</Link>
     <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/reservations">Book</Link>
       
       </div></div>
