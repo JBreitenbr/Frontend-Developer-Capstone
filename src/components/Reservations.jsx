@@ -23,9 +23,12 @@ const Reservations = () => {
   const navigate = useNavigate();
 
   const submitData = (formData) => {
+    
+
     const response = submitAPI(formData);
     if (response) navigate("/Frontend-Developer-Capstone/confirmedReservation");
   };
+  
 
   return (
     <div className="reservations">

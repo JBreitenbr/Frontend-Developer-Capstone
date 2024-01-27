@@ -21,7 +21,14 @@ const ReservationForm = ({
   const [time, setTime] = useState(defaultTime);
   const [numberOfGuests, setNumberGuests] = useState(minimumNumberOfGuests);
   const [occasion, setOccasion] = useState(occasions[0]);
+const myObject = {
+    datum : date,
+    uhrzeit : time,
+    anzahl : numberOfGuests,
+    anlass: occasion
+  }
 
+  window.localStorage.setItem("myObject", JSON.stringify(myObject));
   const isDateValid = () => date !== "";
   const isTimeValid = () => time !== "";
   const isNumberOfGuestsValid = () => numberOfGuests !== "";
