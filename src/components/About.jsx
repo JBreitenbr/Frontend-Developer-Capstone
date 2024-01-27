@@ -1,5 +1,5 @@
-import resto1 from "./assets/resto1.jpg";
-import chefsMarioAndAdrian2Img from "./assets/resto2.jpg";
+import resto1 from "../assets/resto1.jpg";
+import resto2 from "../assets/resto2.jpg";
 import "../styles/About.css";
 
 const About = () => {
@@ -24,8 +24,8 @@ const About = () => {
         </p>
       </div>
       <div className="our-story-chefs">
-        <img src={resto1} alt="Chefs Mario and Adrian #1" />
-        <img src={resto2} alt="Chefs Mario and Adrian #2" />
+        <img className="resto" src={resto1} alt="nouvelle cuisine" />
+        <img className="resto" src={resto2} alt="at work" />
       </div>
     </section>
   );
