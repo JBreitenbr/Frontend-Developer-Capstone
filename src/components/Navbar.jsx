@@ -14,7 +14,7 @@ const Navbar=() => {
   </button><div className="collapse navbar-collapse" id="navbarNav">
       <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone">Home</Link>
       <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/menu">Menu</Link>
-    {/* <Link to="/book" style={{marginLeft:"5px"}}>Book</Link>*/}
+    <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/reservations">Book</Link>
       
       </div></div>
     </nav></header>

@@ -3,7 +3,8 @@ import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import MenuList from './components/MenuList';
-import Footer from './components/Footer';
+import Reservations from './components/Reservations';
+import ConfirmedReservation from './components/ConfirmedReservation';
 export default function App() {
   return (
     <>
@@ -12,6 +13,11 @@ export default function App() {
         <Routes>
           <Route path="/Frontend-Developer-Capstone" element={<Home/>}/>
           <Route path="/Frontend-Developer-Capstone/menu" element={<MenuList/>}/>
+          <Route path="Frontend-Developer-Capstone/reservations" element={<Reservations />} />
+          <Route
+            path="Frontend-Developer-Capstone/confirmedReservation"
+            element={<ConfirmedReservation />}
+          />
         </Routes>
     </Router>
     </>
