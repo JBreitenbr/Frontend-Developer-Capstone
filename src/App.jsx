@@ -10,10 +10,9 @@ export default function App() {
     <Router>
         <Navbar/>
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/menu" element={<MenuList/>}/>
+          <Route path="/Frontend-Developer-Capstone" element={<Home/>}/>
+          <Route path="/Frontend-Developer-Capstone/menu" element={<MenuList/>}/>
         </Routes>
-        <Footer/>
     </Router>
     </>
   )

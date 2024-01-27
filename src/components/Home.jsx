@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
+import Footer from './Footer';
 import restaurant_view from '../assets/restaurant_view.jpg';
 import Bruschetta from '../assets/Bruschetta.jpg';
 import greekSalad from '../assets/greekSalad.jpg';
@@ -10,7 +11,7 @@ import testi2 from '../assets/testi2.jpg';
 import testi3 from '../assets/testi3.jpg';
 
 const Home = () => {
-  return (
+  return (<>
     <section>
       <article className="Banner">
         <h2>Little Lemon</h2>
@@ -48,7 +49,7 @@ const Home = () => {
   <p className="test-para"><i className="fa fa-quote-left"></i>&nbsp;&nbsp;Great experience! Not only is the food impeccable, but also the service is top-notch.&nbsp;&nbsp;<i className="fa fa-quote-right"></i></p>
       </div></div>
       </article>
-    </section>
+    </section><Footer/></>
   )
 }
 
