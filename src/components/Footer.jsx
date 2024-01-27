@@ -1,30 +1,49 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import {
+  faEnvelope,
+  faLocationDot,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '../styles/Footer.css';
+import logo_footer from '../assets/logo_footer.png';
+const contacts = [
+  { icon: faLocationDot, info: "999 Haight-Ashbury Street, San Francisco, CA 94117" },
+  { icon: faPhone, info: "+1 (415) 345-6789" },
+  { icon: faEnvelope, info: "info@littlelemon.com" },
+];
+
 const Footer = () => {
   return (
-<footer className="panel-footer">
-        <section id="hours">
-          <span>Hours:</span>
-          Sun-Thurs: 11:15am - 10:00pm
-          Fri: 11:15am - 2:30pm
-          Saturday Closed
-          
-        </section>
-      <section id="address">
-          <span>Address:</span>
-          7105 Reisterstown Road
-          Baltimore, MD 21215
-          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-        </section>
-        <section id="testimonials">
-          <p>"The best restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-        </section>
-      
-    { /* <div className="text-center">&copy; Julia Breitenbruch 2024</div>*/}
-    
-  </footer>)
-}
+    <footer>
+      <div className="site-footer">
+
+      <div className="site-footer-contact">
+        <h3>Contact us</h3>
+        <address>
+          {contacts.map((contact, index) => (
+            <p key={index}>
+              <FontAwesomeIcon icon={contact.icon} /> {contact.info}
+            </p>
+          ))}
+        </address>
+      </div>
+      <div className="site-footer-contact"><h3>Opening Hours</h3>
+      <p>
+        The Little Lemon Restaurant is open 7 days a week, except for public holidays.
+      </p>
+      <ul>
+        <li>Mon - Fri: 2pm - 10pm</li>
+        <li>Sat: 2pm - 11pm</li>
+        <li>Sun: 2pm - 9pm</li>
+      </ul></div></div>
+         <div style={{display:"flex"}}><img
+        className="site-footer-logo"
+        src={logo_footer}
+        alt="Little Lemon"
+      /><div>&copy; Little Lemon</div></div>
+    </footer>
+  );
+};
 
 export default Footer;
+

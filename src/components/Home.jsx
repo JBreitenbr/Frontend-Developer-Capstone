@@ -5,14 +5,16 @@ import restaurant_view from '../assets/restaurant_view.jpg';
 import Bruschetta from '../assets/Bruschetta.jpg';
 import greekSalad from '../assets/greekSalad.jpg';
 import lemonDessert from '../assets/lemonDessert.jpg';
+import testi1 from '../assets/testi1.jpg';
+import testi2 from '../assets/testi2.jpg';
+import testi3 from '../assets/testi3.jpg';
 
 const Home = () => {
   return (
     <section>
       <article className="Banner">
-      {/* Banner text */}
         <h2>Little Lemon</h2>
-        <h3>Chicago</h3>
+        <h3>San Francisco</h3>
         
         <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
         <Link to="/booking">
@@ -32,6 +34,20 @@ const Home = () => {
   </div>
 </div>
     </article>
+      <article><div className="testis"><div className="test-div">
+       <div className="test-wrapper"> <img src={testi1} alt="Testimonial 1" className='test-pic'/><h4>&nbsp;&nbsp;Laura</h4></div>
+  <p className="test-para"><i className="fa fa-quote-left"></i>&nbsp;&nbsp;The best restaurant I've been to! And that's saying a lot, since I've been to many!&nbsp;&nbsp;<i className="fa fa-quote-right"></i></p>
+      </div>
+        <div className="test-div">
+       <div className="test-wrapper"> <img src={testi2} alt="Testimonial 2" className='test-pic'/><h4>&nbsp;&nbsp;Matt</h4></div>
+  <p className="test-para"><i className="fa fa-quote-left"></i>&nbsp;&nbsp;Amazing food and service! Cozy place! I'll be back again and again!
+        &nbsp;&nbsp;<i className="fa fa-quote-right"></i></p>
+      </div>
+        <div className="test-div">
+        <div className="test-wrapper"> <img src={testi3} alt="Testimonial 3" className='test-pic'/><h4>&nbsp;Janet</h4></div>
+  <p className="test-para"><i className="fa fa-quote-left"></i>&nbsp;&nbsp;Great experience! Not only is the food impeccable, but also the service is top-notch.&nbsp;&nbsp;<i className="fa fa-quote-right"></i></p>
+      </div></div>
+      </article>
     </section>
   )
 }

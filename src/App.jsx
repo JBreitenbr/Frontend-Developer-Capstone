@@ -13,7 +13,7 @@ export default function App() {
           <Route path="/" element={<Home/>}/>
           <Route path="/menu" element={<MenuList/>}/>
         </Routes>
-      <Footer/>
+        <Footer/>
     </Router>
     </>
   )
