@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
 import "../styles/Reservations.css";
 const ConfirmedReservation = () => {
   let obj=window.localStorage.getItem("myObject");
@@ -23,8 +23,7 @@ const ConfirmedReservation = () => {
     </div>
       <Link to="/Frontend-Developer-Capstone/home">
         <button className="btn-lemon">Back to home</button>
-      </Link></div>
-  </>
+      </Link></div><Footer/></>
   );
 };
 
