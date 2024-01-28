@@ -12,8 +12,8 @@ export default function App() {
     <>
     <Router>
         <Navbar/>
-        <Routes>
-          <Route path="/Frontend-Developer-Capstone" element={<Home/>}/>
+        <Routes><Route path="/Frontend-Developer-Capstone" element={<Home/>}/>
+          <Route path="/Frontend-Developer-Capstone/home" element={<Home/>}/>
           <Route path="/Frontend-Developer-Capstone/menu" element={<MenuList/>}/>
           <Route path="Frontend-Developer-Capstone/about" element={<About />} />
           <Route path="Frontend-Developer-Capstone/specials" element={<Specials />} />

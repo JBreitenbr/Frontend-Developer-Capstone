@@ -9,7 +9,7 @@ const ReservationForm = ({
   const defaultTime = availableTimes[0];
   const minimumNumberOfGuests = 1;
   const maximumNumberOfGuests = 10;
-  const occasions = ["Birthday", "Anniversary"];
+  const occasions = ["Birthday", "Anniversary","Engagement","Graduation","Wedding","Other"];
   const invalidDateErrorMessage = "Please choose a valid date";
   const invalidTimeErrorMessage = "Please choose a valid time";
   const invalidOccasionErrorMessage = "Please choose a valid occasion";
@@ -23,7 +23,7 @@ const ReservationForm = ({
 const myObject = {
     datum : date,
     uhrzeit : time,
-    anzahl : numberOfGuests,
+    anzahl_personen: numberOfGuests,
     anlass: occasion
   }
 

@@ -1,20 +1,30 @@
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react'
+import { Link } from 'react-router-dom';
 
+import "../styles/Reservations.css";
 const ConfirmedReservation = () => {
   let obj=window.localStorage.getItem("myObject");
   let parsed=JSON.parse(obj);
   console.log(parsed);
+  let anlass=parsed.anlass;
+  let anzahl_personen=parsed.anzahl_personen;
   let datum=parsed.datum;
   let uhrzeit=parsed.uhrzeit;
   return (
-    <div className="container confirmed-reservation">
-      <FontAwesomeIcon icon={faCircleCheck} size="3x" />
-      <h2>Your table has been reserved!</h2>
-      <p>You'll receive a confirmation email with all the details.</p>
-      <p>{datum}</p>
-      <p>{uhrzeit}</p>
+    <><div className="confirmed-reservation">
+      <h2>Thank you for your reservation!</h2>
+        <h3 className="lead-txt">We look forward to seeing you at Little Lemon.</h3>
+      <div className="reservation-details">
+      <h2 style={{color:"#f7f7f7"}}>Confirmation details</h2>
+          <p><span><strong>Occasion:</strong> {anlass}</span></p>
+          <p><span><strong>Number of Guests:</strong> {anzahl_personen}</span></p>
+          <p><span><strong>Date:</strong> {datum}</span></p>
+          <p><span><strong>Time:</strong> {uhrzeit}</span></p>
     </div>
+      <Link to="/Frontend-Developer-Capstone/home">
+        <button className="btn-lemon">Back to home</button>
+      </Link></div>
+  </>
   );
 };
 
