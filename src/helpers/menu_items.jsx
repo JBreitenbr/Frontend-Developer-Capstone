@@ -13,7 +13,7 @@ const menuData = [
     title: "Bruschetta",
     price: 11.00,
     description:
-      "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+      "Our Bruschetta is made from grilled bread that has been seasoned with fresh garlic, salt and olive oil."
   },
   {
     id: 2,
@@ -21,23 +21,23 @@ const menuData = [
     title: "Greek salad",
     price: 12.00,
     description:
-      "The famous greek salad of crispy lettuce, peppers, olives and feta, garnished with garlic and rosemary.",
+      "The famous greek salad of crispy lettuce, peppers, olives and feta, garnished with crunchy garlic and rosemary croutons.",
   },
-  {
+{
     id: 3,
+    img: lemonDessert,
+    title: "Lemon Dessert",
+    price: 7.00,
+    description:
+      "This comes straight from grandma’s recipe book, every last ingredient is as authentic as can be imagined.",
+  },
+ {
+    id: 4,
     img: grilledFish,
     title: "Grilled Fish",
     price: 9.00,
     description:
       "Our grilled fish is stuffed with lemon and herbs, and then cooked until the skin is browned and crispy to add even more flavor.",
-  },
-  {
-    id: 4,
-    img: lemonDessert,
-    title: "Lemon Dessert",
-    price: 7.00,
-    description:
-      "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
   },
   {
     id: 5,

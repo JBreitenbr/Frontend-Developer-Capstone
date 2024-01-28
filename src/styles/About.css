@@ -11,7 +11,9 @@
 .our-story-description p {
   padding-top: 1.5rem;
 }
-
+.about-para {
+  font-size:0.9rem;
+}
 .our-story-chefs {
   grid-column: 2;
   position: relative;

@@ -4,26 +4,52 @@ import "../styles/About.css";
 
 const About = () => {
   return (
-    <section className="container grid our-story" id="about">
-      <div className="our-story-description">
-        <h2>Our Story</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum. Sed ut
-          perspiciatis unde omnis iste natus error sit voluptatem accusantium
-          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-          inventore veritatis et quasi architecto beatae vitae dicta sunt
-          </p>
-      </div>
-      <div className="our-story-chefs">
-        <img className="resto" src={resto1} alt="nouvelle cuisine" />
-        <img className="resto" src={resto2} alt="at work" />
-      </div>
+    <section>
+      <article>
+        <h1>About Us</h1>
+        <div style={{padding:"2rem",fontSize:"0.6rem"}}>
+            <p className="about-para">
+              Based in Chicago, Illinois, Little Lemon is a family owned
+              Mediterranean restaurant, focused on traditional recipes served with a
+              modern twist.
+            </p>
+            <p className="about-para">
+              The chefs draw inspiration from Italian, Greek, and Turkish culture
+              and have a menu of 12-15 items that they rotate seasonally.
+            </p>
+
+            <p className="about-para">
+              The restaurant has a rustic and relaxed atmosphere with moderate
+              prices, making it a popular place for a meal any time of the day.
+            </p>
+
+            <p className="about-para">
+              Little Lemon is owned by two Italian brothers, Mario and Adrian, who
+              moved to the United States to pursue their shared dream of owning a
+              restaurant.
+            </p>
+
+            <p className="about-para">
+              To craft the menu, Mario relies on family recipes and his experience
+              as a chef in Italy.
+            </p>
+
+            <p className="about-para">
+              Adrian does all the marketing for the restaurant and led the effort to
+              expand the menu beyond classic Italian to incorporate additional
+              cuisines from the mediterranean region.
+            </p>
+            <figure className="figure">
+              <img style={{height:"180px"}}
+                src={resto2}
+                alt="men at work"
+              />
+              <figcaption className="figure-caption">
+                Little Lemon owners Mario and Adrian.
+              </figcaption>
+            </figure>
+          </div>
+      </article>
     </section>
   );
 };

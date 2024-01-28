@@ -2,14 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
 import Footer from './Footer';
+import Specials from './Specials';
+import Reviews from './Reviews';
 import restaurant_view from '../assets/restaurant_view.jpg';
-import Bruschetta from '../assets/Bruschetta.jpg';
-import greekSalad from '../assets/greekSalad.jpg';
-import lemonDessert from '../assets/lemonDessert.jpg';
-import testi1 from '../assets/testi1.jpg';
-import testi2 from '../assets/testi2.jpg';
-import testi3 from '../assets/testi3.jpg';
-
 const Home = () => {
   let w=window.innerWidth;
   console.log(w);
@@ -25,6 +20,7 @@ const Home = () => {
 <img src={restaurant_view} alt="Banner Image" className='banner-img' /><Link to="/Frontend-Developer-Capstone/menu">
           <button id="check-menu" className="btn-lemon">Check out our menu!</button>
         </Link></article>
+      {w<768?(<></>):<Specials/>}
    {/* <article>
       <h2 id="specials-title">This Week's Specials!</h2>
 <div className="specials">

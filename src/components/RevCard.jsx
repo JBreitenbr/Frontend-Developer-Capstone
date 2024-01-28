@@ -1,5 +1,4 @@
-import "../styles/RevCard.css";
-const RevCard = ({ customer }) => {
+const RevCard = ({customer}) => {
   return (
     <div className="test-div"><div className="test-wrapper">
       <img src={customer.custImg} alt={customer.isCalled} className="test-pic" />
@@ -8,5 +7,4 @@ const RevCard = ({ customer }) => {
     </div>
   );
 };
-
 export default RevCard;
