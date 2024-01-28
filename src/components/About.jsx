@@ -20,7 +20,7 @@ const About = () => {
               </figcaption>
             </figure></div>
             <p style={{fontSize:"1.1rem"}}>
-              The chefs draw inspiration from Italian, Greek, and Turkish, Spanish, French, Moroccan and Lebanese culture and have a menu that they rotate seasonally.
+              The chefs draw inspiration from Italian, Greek, Turkish, Spanish, French, Moroccan and Lebanese culture and have a menu that they rotate seasonally.
             </p>
 
             <p style={{fontSize:"1.1rem"}}>

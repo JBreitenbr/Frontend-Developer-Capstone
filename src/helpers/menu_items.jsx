@@ -37,7 +37,7 @@ const menuData = [
     title: "Grilled Fish",
     price: 9.00,
     description:
-      "Our grilled fish is stuffed with lemon and herbs, and then cooked until the skin is browned and crispy to add even more flavor.",
+      "Our grilled fish is stuffed with lemon and herbs, and then cooked until the skin is browned and crispy.",
   },
   {
     id: 5,
