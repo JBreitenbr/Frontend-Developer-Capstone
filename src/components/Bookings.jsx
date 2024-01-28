@@ -2,8 +2,7 @@ import "../styles/Reservations.css";
 import { useReducer } from "react";
 import { useNavigate } from "react-router-dom";
 import { fetchAPI, submitAPI } from "../helpers/mockAPI";
-import Footer from "./Footer";
-import BookingForm from "./BookingForm";
+import ReservationForm from "./reservationForm";
 
 const updateTimes = (availableTimes, date) => {
   const response = fetchAPI(new Date(date));
@@ -25,18 +24,18 @@ const Reservations = () => {
 
   const submitData = (formData) => {
     const response = submitAPI(formData);
-    if (response) navigate("/Frontend-Developer-Capstone/confirmedReservation");
+    if (response) navigate("/confirmedReservation");
   };
 
   return (
-    <><div className="reservations">
+    <div className="reservations">
       <h2>Table reservation</h2>
-      <BookingForm
+      <ReservationForm
         availableTimes={availableTimes}
         dispatchOnDateChange={dispatchOnDateChange}
         submitData={submitData}
       />
-    </div><Footer/></>
+    </div>
   );
 };
 
