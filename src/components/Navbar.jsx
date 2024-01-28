@@ -15,7 +15,6 @@ const Navbar=() => {
     <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone"></Link>
       <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/home">Home</Link>
       <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/menu">Menu</Link><Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/about">About</Link>
-    <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/specials">Specials</Link>
     <Link className="nav-link nav-item" to="/Frontend-Developer-Capstone/reservations">Book</Link>
       
       </div></div>

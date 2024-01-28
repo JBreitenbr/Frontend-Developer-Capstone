@@ -12,10 +12,10 @@ const ConfirmedReservation = () => {
   let uhrzeit=parsed.uhrzeit;
   return (
     <><div className="confirmed-reservation">
-      <h3 style={{marginTop:"2.5rem"}}>Thank you for your reservation!</h3>
+      <h3 style={{marginTop:"2.3rem"}}>Thank you for your reservation!</h3>
         <h4>We look forward to seeing you at Little Lemon.</h4>
       <div className="reservation-details">
-      <h2 style={{color:"#f7f7f7"}}>Confirmation details</h2>
+      <h3 style={{color:"#f7f7f7"}}>Confirmation details</h3>
           <p><span><strong>Occasion:</strong> {anlass}</span></p>
           <p><span><strong>Number of Guests:</strong> {anzahl_personen}</span></p>
           <p><span><strong>Date:</strong> {datum}</span></p>

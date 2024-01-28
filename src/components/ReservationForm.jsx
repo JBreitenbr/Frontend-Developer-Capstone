@@ -51,7 +51,7 @@ const myObject = {
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
+    <form onSubmit={handleFormSubmit} style={{backgroundColor:"lightgrey",borderRadius:"1rem"}}>
       <FormField
         label="Date"
         htmlFor="reservation-date"
@@ -130,8 +130,8 @@ const myObject = {
         </div>
       </FormField>
       <button
-        className="button-primary"
-        type="submit"
+        className="btn-lemon"
+        type="submit" style={{marginTop:"1rem"}}
         disabled={!areAllFieldsValid()}
       >
         Reserve now!

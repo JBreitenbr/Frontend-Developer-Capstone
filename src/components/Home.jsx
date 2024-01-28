@@ -11,16 +11,15 @@ const Home = () => {
   return (<>
     <section>
       <article className="banner">
-        <h2 id="head1">Little Lemon</h2>
+        <div><h2 id="head1">Little Lemon</h2>
         <h3 id="head2">San Francisco</h3>
-        <p className="resto-desc">We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        <p className="resto-desc" style={{marginTop:"1rem"}}>We are a family owned Mediterranean </p> <p className="resto-desc">restaurant, focused on traditional recipes</p><p className="resto-desc" style={{marginBottom:"1rem"}}>served with a modern twist.</p>
         <Link to="/Frontend-Developer-Capstone/reservations">
           <button className="btn-lemon">Reserve a table</button>
-        </Link>
-<img src={restaurant_view} alt="Banner Image" className='banner-img' /><Link to="/Frontend-Developer-Capstone/menu">
-          
-        </Link></article>
-      {w<768?(<div id="check-menu-wrapper"><button id="check-menu" className="btn-lemon">Check out our menu!</button></div>):(<><h2 style={{textAlign:"center"}}>This Week's Specials!</h2><Specials/><Reviews/></>)}
+        </Link></div>
+<div><img src={restaurant_view} alt="Banner Image" className='banner-img' /></div>
+          </article>
+      {w<768?(<div id="check-menu-wrapper"><Link to="/Frontend-Developer-Capstone/menu"><button id="check-menu" className="btn-lemon">Check out our menu!</button></Link></div>):(<><h2 style={{textAlign:"center",padding:"0px",margin:"0px"}}>This Week's Specials!</h2><Specials/><Reviews/></>)}
     </section><Footer/></>
   )
 }
