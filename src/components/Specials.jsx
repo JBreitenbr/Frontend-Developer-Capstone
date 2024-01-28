@@ -6,6 +6,7 @@ const Specials = () => {
   let specialsData=menuData.filter(item=>item.id<4);
   return (<article style={{paddingTop:"1rem",paddingBottom:"1rem",backgroundColor:"#fff"}}>
     <div className="specials">
+<h2>This Week's Specials!</h2>
         {specialsData.map((menu, index) => (
           <SpecialsCard key={index} menu={menu} />
         ))}

@@ -14,15 +14,13 @@ const MenuList=() =>{
   });
 
   return (
-      <><div className="outer">
+    <>
+     <div className="outer">
         <div id="menu-list">
-            {/* <h2>This week Specials</h2>
-            <Link to="/" className="menu-link">
-              See whole online menu
-            </Link>*/}
           {menuElements}
         </div>
-      </div><Footer/></>
+      </div>
+      <Footer /></>
   );
 }
 export default MenuList;

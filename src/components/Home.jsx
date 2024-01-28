@@ -18,9 +18,9 @@ const Home = () => {
           <button className="btn-lemon">Reserve a table</button>
         </Link>
 <img src={restaurant_view} alt="Banner Image" className='banner-img' /><Link to="/Frontend-Developer-Capstone/menu">
-          <button id="check-menu" className="btn-lemon">Check out our menu!</button>
+          
         </Link></article>
-      {w<768?(<></>):<Specials/>}
+      {w<768?(<div id="check-menu-wrapper"><button id="check-menu" className="btn-lemon">Check out our menu!</button></div>):<Specials/>}
    {/* <article>
       <h2 id="specials-title">This Week's Specials!</h2>
 <div className="specials">

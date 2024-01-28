@@ -60,10 +60,6 @@
   width: 90%;
   margin: 0;
 }
-hr.divider {
-  border-top: 1px solid grey;
-  width: 80%;
-}
 
 @media (min-width: 768px) {
   #menu-list {

@@ -1,11 +1,10 @@
-
 .site-footer {
   background-color: #495e57;
   color: #ffffff;
-  padding: 1.5rem ;
+  padding: 0.5rem;
+  justify-content: space-around;
   display: flex;
-  gap: 2rem;
-  height: 200px;
+  height: 175px;
 }
 
 .site-footer-logo {
@@ -19,7 +18,7 @@
 }
 .site-footer-contact {
   width: 200px;
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem 1rem;
 }
 
 .site-footer-contact svg {
@@ -33,13 +32,7 @@
 }
 
 #footer-logo-div {
-  padding: 1rem;
-  background-color:#f3f3f3;
+  padding: 1rem 1rem 0.5rem 3rem;
 }
 
-#cpy {
-  text-align: center;
-  background-color:#495e57;
-  color: white;
-  padding-bottom: 1.5rem;
-}
+
